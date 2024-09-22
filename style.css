@@ -1,0 +1,492 @@
+/*STYLES FOR DISPLAYING POKEMON CARDS*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: gray;
+}
+
+body h1{
+    text-align: center;
+    justify-content: center;
+}   
+
+.pokemon-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    justify-content: center;
+}
+
+.card{
+    width: 170px;
+    height: 270px;
+    box-shadow: 1px 1px 7px #000004f1;
+    border-radius: 20px;
+    background-color: white;
+    border: 4px solid gold;
+}
+
+.card:hover{
+    filter: drop-shadow(1px 5px #000004f1);
+    transition: 0.5s;
+    border: 4px solid red;
+}
+
+.card img{
+    width: 100%;
+    height: 145px;
+    padding: 10px;
+}
+
+.card ul{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.pokemon-id{
+    font-size: 13px;
+    padding: 9px;
+}
+
+.pokemon-name{
+    color: black;
+    font-weight: bold;
+    padding: 6px;
+    color: blue;
+    font-size: larger;
+}
+
+.pokemon-type{
+    padding: 5px;
+}
+
+.grass{
+    color: white;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    background-color: green;
+    display: inline-block;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.psychic{
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    background-color: #ff227a;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+/*TYPE OF EVERY POKEMON CHARACTERS AND ITS UNIQUE SPAN DESIGNS*/
+.water{
+    background-color: #0080ff;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.fire{
+    background-color: #d52100;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.bug{
+    background-color: #83901a;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.flying{
+    background-color: #556dff;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.normal{
+    background-color: #797964;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.poison{
+    background-color: #88447a;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.electric{
+    background-color: #c90;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.ground{
+    background-color: #bf9926;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.fairy{
+    background-color: #e76de7;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.fighting{
+    background-color: #a84d3d;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.rock{
+    background-color: #a59249;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.steel{
+    background-color: #8e8ea4;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.ice{
+    background-color: #0af;
+    font-weight: bold; 
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.ghost{
+    background-color: #5454b3;
+    font-weight: bold; 
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.dark{
+    background-color: #573e31;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+.dragon{
+    background-color: #76e;
+    font-weight: bold;
+    width: 66px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    line-height: 1.5rem;
+    display: inline-block;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+}
+
+/*STYLES FOR POKEMON: DISPLAYING THE DATA OF EACH CHARACTERS*/
+.pokemon-page {
+    width: 800px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #00000065;
+    border: 4px solid gold;
+  }
+
+  .pokemon-page h1 {
+    color: 000;
+    background-color: blue;
+    height: 10%;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .pokemon-page p {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 12px;
+  }
+  
+  .pokemon-page-image {
+    width: 380px;
+    text-align: center;
+  }
+  
+  .pokemon-page-image img {
+    width: 240px;
+    margin: 5px auto;
+  }
+  
+  .pokemon-main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .pokemon-page-details {
+    padding: 10px 25px;
+  }
+  
+  .pokemon-page-abilities span {
+    font-weight: 500;
+    font-size: 10px;
+    margin: auto 2px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px -1px #000000d7;
+    color: white !important;
+  }
+  
+  .pokemon-page-stats {
+    padding: 10px 25px;
+  }
+  
+  .pokemon-page-stats table{
+    margin: 10px auto;
+    width: 100%;
+  }
+  
+  .pokemon-page-stats table .bar div {
+    width: 0px;
+    height: 13px;
+    background-color: #0dc80d;
+  }
+  .pokemon-main-content table{
+    border-collapse: collapse;
+  }
+  .pokemon-main-content table tr td {
+    border-bottom: 1px solid #0000002d;
+    padding: 2px 0px;
+  }
+  
+  .pokemon-page-evolution {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .pokemon-main-content table tr td:nth-child(1){
+    color: rgb(90, 90, 90);
+  }
+  
+  .pokemon-main-content table tr td:nth-child(2){
+    padding-left: 15px;
+    font-weight: 500;
+  }
+  
+  /*DISPLAYING THE ABILITIES OF EVERY POKEMON CHARACTERS*/
+  .pokemon-page-details:has(.electric) .pokemon-page-abilities span {
+    background-color: #c90;
+  }
+  
+  .pokemon-page-details:has(.psychic) .pokemon-page-abilities span {
+    background-color: #ff227a;
+  }
+  
+  .pokemon-page-details:has(.grass) .pokemon-page-abilities span {
+    background-color: green;
+  }
+  
+  .pokemon-page-details:has(.poison) .pokemon-page-abilities span {
+    background-color: purple;
+  }
+  
+  .pokemon-page-details:has(.fire) .pokemon-page-abilities span {
+    background-color: rgba(255, 68, 0, 0.81);
+  }
+  
+  .pokemon-page-details:has(.water) .pokemon-page-abilities span {
+    background-color: blue;
+  }
+  
+  .pokemon-page-details:has(.flying) .pokemon-page-abilities span {
+    background-color: darkblue;
+  }
+  
+  .pokemon-page-details:has(.bug) .pokemon-page-abilities span {
+    background-color: darkgreen;
+  }
+  
+  .pokemon-page-details:has(.normal) .pokemon-page-abilities span {
+    background-color: grey;
+  }
+  
+  .pokemon-page-details:has(.ground) .pokemon-page-abilities span {
+    background-color: #bf9926;
+  }
+  
+  .pokemon-page-details:has(.fairy) .pokemon-page-abilities span {
+    background-color: #e76de7;
+  }
+  
+  .pokemon-page-details:has(.fighting) .pokemon-page-abilities span {
+    background-color: darkred;
+  }
+  
+  .pokemon-page-details:has(.rock) .pokemon-page-abilities span {
+    background-color: #a59249;
+  }
+  
+  .pokemon-page-details:has(.steel) .pokemon-page-abilities span {
+    background-color: #8e8ea4;
+  }
+  
+  .pokemon-page-details:has(.dark) .pokemon-page-abilities span {
+    background-color: #573e31;
+  }
+  
+  .pokemon-page-details:has(.ice) .pokemon-page-abilities span {
+    background-color: #0af;
+  }
+  
+  .pokemon-page-details:has(.ghost) .pokemon-page-abilities span {
+    background-color: #5454b3;
+  }
+  
+  .pokemon-page-details:has(.dragon) .pokemon-page-abilities span {
+    background-color: #4e38e9;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-button{
+    width: 75px;
+    height: 25px;
+  }
+
+  .right-button{
+    width: 75px;
+    height: 25px;
+  }
+
+  .left-button:hover{
+    box-shadow: 0 1px 3px -1px #000000d7;
+    background-color: blue;
+    color: white;
+    transition: 0.1s;
+    font-weight: bold;
+  }
+
+  .right-button:hover{
+    box-shadow: 0 1px 3px -1px #000000d7;
+    background-color: blue;
+    color: white;
+    transition: 0.1s;
+    font-weight: bold;
+  }
+
+  .return{
+    font-size: large;
+    font-weight: bold;
+    margin: -7;
+    height: 35px;
+    width: 40px;
+  }
+  
+
+
